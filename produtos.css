@@ -1,0 +1,17 @@
+header {
+    background: #BBBBBB;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px ; /*Vou aumentar o espaçamento interno do menu*/
+    /* topo, direita, para baixo e último para esquerda*/
+}
+
+nav a {
+    text-transform: uppercase; /*coloca em maiúsculo */
+    color: #000000;
+    font-weight: bold; /*peso da fonte é bold - negrito*/
+    font-size: 22px; /*tamanho da fonte*/
+    text-decoration: none; /*nenhuma decoração no meu text- sem sublinhado inclusive */
+}
