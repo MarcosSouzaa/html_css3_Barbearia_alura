@@ -1,6 +1,7 @@
 header {
     background: #BBBBBB;
-    padding: 20px o; /*espaçamento interno de 20px pra cima e pra baixo e 0 para esquerda e direita*/
+    padding: 20px o;
+    /*espaçamento interno de 20px pra cima e pra baixo e 0 para esquerda e direita*/
 }
 
 .caixa {
@@ -36,3 +37,43 @@ nav a {
     text-decoration: none;
     /*nenhuma decoração no meu text- sem sublinhado inclusive */
 }
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    /*um espaçamento lateral de 0px pra cima e pra baixo e automático para os lados */
+    padding: 50px 0;
+    /*50px pra cima e pra baixo e zero para baixo do produto para o header*/
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background: #cccccc; /*colocando cor nos quadrados dos produtos*/
+    margin:0 1.5% ; /* Dando espaçamento entre os quadrados zero pra cima e pra baixo e 1.5 para os lados*/
+    padding: 30px 20px; /* 30px pra cima e pra baixo e 20 px para as laterais*/
+    box-sizing: border-box;
+}   
+
+.produtos h2 {
+    /*para mexer no título dos produtos */
+    font-size: 30px;
+    /*tamanho da fonte*/
+    font-weight: bold;
+    /*peso da fonte em negrito*/
+}
+
+.produto-descricao {
+    font-size: 20px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+   /* margin: 10px 0 0; /*wspaçamento interno pra cima de 10px, para os lados zero e pra baixo zero*/
+   
+}
+
