@@ -55,7 +55,11 @@ nav a {
     margin:0 1.5% ; /* Dando espaçamento entre os quadrados zero pra cima e pra baixo e 1.5 para os lados*/
     padding: 30px 20px; /* 30px pra cima e pra baixo e 20 px para as laterais*/
     box-sizing: border-box;
+    border: 2px solid #000000; /* aqui um tipo que substitui os três: borda, o tipo, tamanho e cor*/
 }   
+    /*border-color:#000000 ; /* três ítens que configuram a borda*/
+    /*border-width:2px ;
+   /* border-style:solid ;
 
 .produtos h2 {
     /*para mexer no título dos produtos */
