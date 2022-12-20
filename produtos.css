@@ -1,17 +1,38 @@
 header {
     background: #BBBBBB;
+    padding: 20px o; /*espaçamento interno de 20px pra cima e pra baixo e 0 para esquerda e direita*/
+}
+
+.caixa {
+    position: relative;
+    /*quero que o menu levante e fique dentro da caixa*/
+    width: 940px;
+    margin: 0 auto;
+    /*calcula margens esq, dir automático. verificar no devtools*/
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
 }
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px ; /*Vou aumentar o espaçamento interno do menu*/
+    margin: 0 0 0 15px;
+    /*Vou aumentar o espaçamento interno do menu*/
     /* topo, direita, para baixo e último para esquerda*/
 }
 
 nav a {
-    text-transform: uppercase; /*coloca em maiúsculo */
+    text-transform: uppercase;
+    /*coloca em maiúsculo */
     color: #000000;
-    font-weight: bold; /*peso da fonte é bold - negrito*/
-    font-size: 22px; /*tamanho da fonte*/
-    text-decoration: none; /*nenhuma decoração no meu text- sem sublinhado inclusive */
+    font-weight: bold;
+    /*peso da fonte é bold - negrito*/
+    font-size: 22px;
+    /*tamanho da fonte*/
+    text-decoration: none;
+    /*nenhuma decoração no meu text- sem sublinhado inclusive */
 }
