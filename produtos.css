@@ -38,6 +38,13 @@ nav a {
     /*nenhuma decoração no meu text- sem sublinhado inclusive */
 }
 
+nav a:hover {
+    /* hover -> quando o mouse está por cima do elemento - quero monitorar o link a dentro do menu de Navegação. */
+    color: #C78C19;
+    text-decoration: underline;
+
+}
+
 .produtos {
     width: 940px;
     margin: 0 auto;
@@ -52,15 +59,34 @@ nav a {
     width: 30%;
     vertical-align: top;
     /*background: #cccccc; /*colocando cor nos quadrados dos produtos*/
-    margin:0 1.5% ; /* Dando espaçamento entre os quadrados zero pra cima e pra baixo e 1.5 para os lados*/
-    padding: 30px 20px; /* 30px pra cima e pra baixo e 20 px para as laterais*/
+    margin: 0 1.5%;
+    /* Dando espaçamento entre os quadrados zero pra cima e pra baixo e 1.5 para os lados*/
+    padding: 30px 20px;
+    /* 30px pra cima e pra baixo e 20 px para as laterais*/
     box-sizing: border-box;
-    border: 2px solid #000000; /* aqui um tipo que substitui os três abaixo: borda, o tipo, tamanho e cor*/
-    border-radius:10px ;
-}   
+    border: 2px solid #000000;
+    /* aqui um tipo que substitui os três abaixo: borda, o tipo, tamanho e cor*/
+    border-radius: 10px;
+
     /*border-color:#000000 ; /* três ítens que configuram a borda*/
     /*border-width:2px ;
-   /* border-style:solid ;
+   /* border-style:solid ;*/
+}
+
+.produtos li:hover {
+    /*muda a cor da borda*/
+    border-color: #C78C19;
+}
+
+.produtos li:active {
+    /*É ativado quando clica o mouse*/
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    /*Eu quero que o h2 quando o mouse estiver por cima do li dos produtos ele tenha o tamanho de fonte de 40px*/
+    font-size: 34px;
+}
 
 .produtos h2 {
     /*para mexer no título dos produtos */
@@ -78,7 +104,6 @@ nav a {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
-   /* margin: 10px 0 0; /*wspaçamento interno pra cima de 10px, para os lados zero e pra baixo zero*/
-   
-}
+    /* margin: 10px 0 0; /*wspaçamento interno pra cima de 10px, para os lados zero e pra baixo zero*/
 
+}
