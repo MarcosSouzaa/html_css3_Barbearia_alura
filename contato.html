@@ -27,16 +27,16 @@
     <main>
        <form>
             <label for="nomesobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomesobrenome" classe="input-padrao">
+            <input type="text" id="nomesobrenome" classe="input-padrao" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" classe="input-padrao">
+            <input type="email" id="email" classe="input-padrao" required placeholder="seuemail@dominio.com">
 
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" classe="input-padrao">           
+            <input type="tel" id="telefone" classe="input-padrao" required placeholder="(xx) xxxxx-xxxx">           
             
             <label for="mensagem">Mensagem</label>
-            <textarea cols="60" rows="10" id="mensagem" classe="input-padrao"></textarea>
+            <textarea cols="60" rows="10" id="mensagem" classe="input-padrao" required></textarea>
 
             <!vou colocar a configuração name="contato" para quando clicar em um, não acionar o outro>
             <div> 
@@ -45,7 +45,7 @@
                 
                 <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>               
 
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>                
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>                
             </div>
 
             <div>
@@ -57,7 +57,7 @@
                 </select>
             </div>
 
-            <label><input type="checkbox" class="checkbox"> Gostaria de receber nossas novidades por email?</label>
+            <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
             <input type="submit" value="Enviar formulário">
        </form>
     </main>
