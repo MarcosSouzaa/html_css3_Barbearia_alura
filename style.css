@@ -165,11 +165,13 @@ form legend {
    font-size: 18px;
    border: none;
    border-radius: 10px;
-   transition: 1s  background;
+   transition: 1s all;
    cursor: pointer; /*mostra a mão em vez de seta*/
 
 }
 
 .enviar:hover {
-    background: darkorange;
+    background: darkorange;  
+    transform: scale(1.2) ;   
+   /* transform: rotate(5deg) scale(1.2); aumenta a escala em 20% e rotaciona os graus definidos*/
 }
