@@ -105,5 +105,16 @@ nav a:hover {
     font-weight: bold;
     margin-top: 10px;
     /* margin: 10px 0 0; /*wspaçamento interno pra cima de 10px, para os lados zero e pra baixo zero*/
+}
 
+footer {
+    text-align: center;
+    background: url("img/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0; /*Margem superior de 20px*/
 }
