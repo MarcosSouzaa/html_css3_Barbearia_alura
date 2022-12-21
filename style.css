@@ -155,3 +155,21 @@ form legend {
     margin: 20px 0;
     /*margem para cima e para baixo de 20pl*/
 }
+
+.enviar {
+   width: 40%; 
+   padding: 15px 0;
+   background: orange;
+   color: white; /*cor do texto*/
+   font-weight: bold;
+   font-size: 18px;
+   border: none;
+   border-radius: 10px;
+   transition: 1s  background;
+   cursor: pointer; /*mostra a mão em vez de seta*/
+
+}
+
+.enviar:hover {
+    background: darkorange;
+}
