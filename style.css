@@ -132,7 +132,7 @@ form {
 }
 
 form label,
-form p {
+form legend {
     /*quebrando a linha do formulário na label*/
     display: block;
     font-size: 20px;

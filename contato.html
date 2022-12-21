@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Barbearia Alura</title>
     <link rel="stylesheet" href="reset.css">
-    <!limpa o que o navegador fez de css>
+    <!--limpa o que o navegador fez de css> -->
         <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div class="caixa">
-            <h1><img src="/img/logo.png"></h1>
+            <h1><img src="/img/logo.png" alt="Logo da Barbearia Alura"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -38,24 +38,26 @@
             <label for="mensagem">Mensagem</label>
             <textarea cols="60" rows="10" id="mensagem" classe="input-padrao" required></textarea>
 
-            <!vou colocar a configuração name="contato" para quando clicar em um, não acionar o outro>
-            <div> 
-                <p>Como prefere nosso contato?</p>             
+            <!--vou colocar a configuração name="contato" para quando clicar em um, não acionar o outro -->
+            <!--quando temos vários campos com assuntos específicos usamos fieldset -->
+            <fieldset> 
+                <legend>Como prefere nosso contato?</legend> <!-- Dentro do fieldset não temos parágrafos e sim legend> -->
+
                 <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>             
                 
                 <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>               
 
                 <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>                
-            </div>
+            </fieldset>
 
-            <div>
-                <p>Qual horário prefere ser atendido?</p>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
                 <select>
                     <option>Manhã</option>
                     <option>Tarde</option>
                     <option>Noite</option>
                 </select>
-            </div>
+            </fieldset>
 
             <label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
             <input type="submit" value="Enviar formulário">
@@ -63,7 +65,7 @@
     </main>
 
     <footer>
-        <img src="img/logo-branco.png">
+        <img src="img/logo-branco.png" alt="Logo da Barbearia Alura">
         <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
     </footer>
 
