@@ -118,3 +118,25 @@ footer {
     font-size: 13px;
     margin: 20px 0 0; /*Margem superior de 20px*/
 }
+
+main { /* formulário na página contato*/
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0; /*quero que tenha um espaço entre o fim do cabeçaho e o início do formulário e o iicio do rodapé*/
+}
+
+form label { /*quebrando a linha do formulário na label*/
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px; /*aumentando o espaço entre cada label e o que vem logo abaixo*/
+}
+
+form input {  /*quebrando a linha do formulário no input*/
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*10px pra cima e pra baixo e 25 px para os lados*/
+    width: 50%; /*ocupando 50% da página*/
+}   
