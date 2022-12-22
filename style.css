@@ -199,6 +199,7 @@ td, th{ /*usando a mesma configuração para os dois*/
     text-align: center;
     font-size: 2em; /*2em significa o dobro do tamanho da fonte*/
     margin: 0 0 1em; /*proporcional ao tamanho da fonte*/
+    clear: left; /*limpa o float que adicionei para reposicionar tudo que está abaixo. */
 }
 
 .principal p {
@@ -212,6 +213,13 @@ td, th{ /*usando a mesma configuração para os dois*/
     font-style: italic;
 }
 
-.imagemBeneficios {
-    width: 60%;
+.utensilios {
+    width: 120px;
+    float: left; /*levantamos o objeto para flutuar par esquerda. Se tiver texto abaixo, ele sobe mas não ocupa o lugar da foto.*/
+    margin: 0 20px 20px 0; /*0 pra cima, 20px para direita, 20px pra baixo 0 para esquerda.  */
 }
+
+.imagemBeneficios {
+    width: 60%;   
+}
+
