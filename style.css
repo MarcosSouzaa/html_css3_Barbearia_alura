@@ -175,3 +175,17 @@ form legend {
     transform: scale(1.2) ;   
    /* transform: rotate(5deg) scale(1.2); aumenta a escala em 20% e rotaciona os graus definidos*/
 }
+
+table {
+    margin: 20px 0 40px; /*margem com 20px pra cima e 40px pra baixo*/
+}
+
+thead {
+    background: #555555;
+    color: white; /*cor da letra*/
+}
+
+td, th{ /*usando a mesma configuração para os dois*/
+    border: 1px solid #000000; 
+    padding: 8px  15px ; /*pra cima e pra baixo de 8px e espaçamento lateral de 15px*/
+}
