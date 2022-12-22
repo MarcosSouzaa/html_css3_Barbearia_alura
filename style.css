@@ -227,3 +227,17 @@ td, th{ /*usando a mesma configuração para os dois*/
     width: 60%;   
 }
 
+.mapa {
+    padding: 3em 0; /*espaçamento proporcional ao tamanho da fonte do meu site */
+}
+
+.mapa p { /*parágrafo que está dentro do mapa*/
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+/*Centralizando o vídeo*/
+.video {
+    width: 560px; /*mantendo o mesmo tamanho do vídeo*/
+    margin: 1em auto; /*tem 1em pra cima e pra baixo e automática nas laterais*/
+}
