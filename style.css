@@ -161,37 +161,44 @@ form legend {
 }
 
 .enviar {
-   width: 40%; 
-   padding: 15px 0;
-   background: orange;
-   color: white; /*cor do texto*/
-   font-weight: bold;
-   font-size: 18px;
-   border: none;
-   border-radius: 10px;
-   transition: 1s all;
-   cursor: pointer; /*mostra a mão em vez de seta*/
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    /*cor do texto*/
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    /*mostra a mão em vez de seta*/
 
 }
 
 .enviar:hover {
-    background: darkorange;  
-    transform: scale(1.2) ;   
-   /* transform: rotate(5deg) scale(1.2); aumenta a escala em 20% e rotaciona os graus definidos*/
+    background: darkorange;
+    transform: scale(1.2);
+    /* transform: rotate(5deg) scale(1.2); aumenta a escala em 20% e rotaciona os graus definidos*/
 }
 
 table {
-    margin: 20px 0 40px; /*margem com 20px pra cima e 40px pra baixo*/
+    margin: 20px 0 40px;
+    /*margem com 20px pra cima e 40px pra baixo*/
 }
 
 thead {
     background: #555555;
-    color: white; /*cor da letra*/
+    color: white;
+    /*cor da letra*/
 }
 
-td, th{ /*usando a mesma configuração para os dois*/
-    border: 1px solid #000000; 
-    padding: 8px  15px ; /*pra cima e pra baixo de 8px e espaçamento lateral de 15px*/
+td,
+th {
+    /*usando a mesma configuração para os dois*/
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    /*pra cima e pra baixo de 8px e espaçamento lateral de 15px*/
 }
 
 /*CSS da Página inicia index*/
@@ -201,14 +208,18 @@ td, th{ /*usando a mesma configuração para os dois*/
 
 .titulo-principal {
     text-align: center;
-    font-size: 2em; /*2em significa o dobro do tamanho da fonte*/
-    margin: 0 0 1em; /*proporcional ao tamanho da fonte*/
-    clear: left; /*limpa o float que adicionei para reposicionar tudo que está abaixo. */
+    font-size: 2em;
+    /*2em significa o dobro do tamanho da fonte*/
+    margin: 0 0 1em;
+    /*proporcional ao tamanho da fonte*/
+    clear: left;
+    /*limpa o float que adicionei para reposicionar tudo que está abaixo. */
 }
 
 .principal p {
     margin: 0 0 1em;
 }
+
 .principal strong {
     font-weight: bold;
 }
@@ -219,25 +230,58 @@ td, th{ /*usando a mesma configuração para os dois*/
 
 .utensilios {
     width: 120px;
-    float: left; /*levantamos o objeto para flutuar par esquerda. Se tiver texto abaixo, ele sobe mas não ocupa o lugar da foto.*/
-    margin: 0 20px 20px 0; /*0 pra cima, 20px para direita, 20px pra baixo 0 para esquerda.  */
-}
-
-.imagemBeneficios {
-    width: 60%;   
+    float: left;
+    /*levantamos o objeto para flutuar par esquerda. Se tiver texto abaixo, ele sobe mas não ocupa o lugar da foto.*/
+    margin: 0 20px 20px 0;
+    /*0 pra cima, 20px para direita, 20px pra baixo 0 para esquerda.  */
 }
 
 .mapa {
-    padding: 3em 0; /*espaçamento proporcional ao tamanho da fonte do meu site */
+    padding: 3em 0;
+    /*espaçamento proporcional ao tamanho da fonte do meu site */
 }
 
-.mapa p { /*parágrafo que está dentro do mapa*/
+.mapa p {
+    /*parágrafo que está dentro do mapa*/
     margin: 0 0 2em;
     text-align: center;
 }
 
+.beneficios {
+    padding: 3em 0;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+    /*Margem automática para os lados*/
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    /*usa a largura total ao lado do texto*/
+    vertical-align: top;
+    /*alinha o texto no topo*/
+}
+
+.itens {
+    line-height: 1.5; /* espaçamento de tamanho da fonte + 50%*/
+}
+
+.itens:first-child { /*primeiro ítem da lista*//*poderia usar last-child, nth-child(passando nº do ítem ou valor de n, ex. 2n p/ todos pares)*/
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
+
 /*Centralizando o vídeo*/
 .video {
-    width: 560px; /*mantendo o mesmo tamanho do vídeo*/
-    margin: 1em auto; /*tem 1em pra cima e pra baixo e automática nas laterais*/
+    width: 560px;
+    /*mantendo o mesmo tamanho do vídeo*/
+    margin: 2em auto;
+    /*tem 2em pra cima e pra baixo e automática nas laterais*/
+
 }
