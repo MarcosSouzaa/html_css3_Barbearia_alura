@@ -189,3 +189,29 @@ td, th{ /*usando a mesma configuração para os dois*/
     border: 1px solid #000000; 
     padding: 8px  15px ; /*pra cima e pra baixo de 8px e espaçamento lateral de 15px*/
 }
+
+/*CSS da Página inicia index*/
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*2em significa o dobro do tamanho da fonte*/
+    margin: 0 0 1em; /*proporcional ao tamanho da fonte*/
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.imagemBeneficios {
+    width: 60%;
+}
