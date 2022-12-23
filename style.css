@@ -287,6 +287,10 @@ th {
     font-weight: bold;
 }
 
+.itens:before {
+    content: "🟊";
+}
+
 .imagem-beneficios {
     width: 60%;
 }
@@ -297,5 +301,19 @@ th {
     /*mantendo o mesmo tamanho do vídeo*/
     margin: 2em auto;
     /*tem 2em pra cima e pra baixo e automática nas laterais*/
-
 }
+
+/*OBSERVAÇÃO
+
+/*.titulo-principal:first-letter { Coloca a primeira letra em negrito
+    font-weight: bold;
+}
+p:first-line  Deixa primeira linha em itálico 
+
+.titulo-principal:before {
+    content: "[ ";
+}
+
+.titulo-principal:after {
+    content: " ]";
+}*/
