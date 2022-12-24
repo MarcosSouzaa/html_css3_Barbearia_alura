@@ -205,21 +205,23 @@ th {
     width: 100%;
 }
 
+/*SELETORES AVANÇADOS*/
+
 /*main > p { usando o sinal de > eu acesso todas as tags P que são filhas diretas de main
      background: red;
-} */
+} 
 
-img + p { /*imagem como elemento âncora e o primeiro ou o próximo irmão representado por + . Estou selecionando só o parágrafo logo após a img*/
+img + p { imagem como elemento âncora e o primeiro ou o próximo irmão representado por + . Estou selecionando só o parágrafo logo após a img.
     background: blue;
 } 
 
-img ~ p { /*Selecionando todos os parágrafos que vem depois da imagem*/
-    background: yellow; /*A ordem dos seletores faz com que eles se sobscrevam. Todos têm a mesma força*/
+img ~ p { Selecionando todos os parágrafos que vem depois da imagem
+        background: yellow; A ordem dos seletores faz com que eles se sobscrevam. Todos têm a mesma força
 }
-/*quero marcar todos parágrafos que não seja o do id="missao" */
-.principal p:not(#missao) { /*quero selecionar todos parágrafos p que não seja id="missao". Isso é EXCLUSÃO*/
+ quero marcar todos parágrafos que não seja o do id="missao" 
+.principal p:not(#missao) { quero selecionar todos parágrafos p que não seja id="missao". Isso é EXCLUSÃO
     background: orange;
-}
+} */
   
 
 .titulo-principal {
