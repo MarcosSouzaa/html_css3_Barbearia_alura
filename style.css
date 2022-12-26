@@ -126,7 +126,8 @@ footer {
 
 main {
     /* formulário na página contato*/
-   
+    margin-left: 50px;
+
 }
 
 form {
@@ -222,7 +223,7 @@ img ~ p { Selecionando todos os parágrafos que vem depois da imagem
 .principal p:not(#missao) { quero selecionar todos parágrafos p que não seja id="missao". Isso é EXCLUSÃO
     background: orange;
 } */
-  
+
 
 .titulo-principal {
     text-align: center;
@@ -232,10 +233,14 @@ img ~ p { Selecionando todos os parágrafos que vem depois da imagem
     /*proporcional ao tamanho da fonte*/
     clear: left;
     /*limpa o float que adicionei para reposicionar tudo que está abaixo. */
+
+    /* color: rgb(0,0,0,0.3); usando rgb com opacidade 0.3 colocamos a camada alfa "a" rgba*/
+   /* text-shadow: 2px 3px 2px #4b2a2a;*/
 }
 
 .principal {
-    padding: 3em 0; /*3em para cima e para baixo e zero para as laterais*/
+    padding: 3em 0;
+    /*3em para cima e para baixo e zero para as laterais*/
     background: #FEFEFE;
     width: 940px;
     margin: 0 auto;
@@ -263,7 +268,7 @@ img ~ p { Selecionando todos os parágrafos que vem depois da imagem
 
 .mapa {
     padding: 3em 0;
-    /* 3em 0 espaçamento proporcional ao tamanho da fonte do meu site */   
+    /* 3em 0 espaçamento proporcional ao tamanho da fonte do meu site */
     background: linear-gradient(#FEFEFE, #888888);
 }
 
@@ -276,12 +281,12 @@ img ~ p { Selecionando todos os parágrafos que vem depois da imagem
     /*parágrafo que está dentro do mapa*/
     margin: 0 0 2em;
     text-align: center;
-    
+
 }
 
 .beneficios {
     padding: 3em 0;
-    background: #888888;    
+    background: #888888;
 }
 
 .conteudo-beneficios {
@@ -299,10 +304,13 @@ img ~ p { Selecionando todos os parágrafos que vem depois da imagem
 }
 
 .itens {
-    line-height: 1.5; /* espaçamento de tamanho da fonte + 50%*/
+    line-height: 1.5;
+    /* espaçamento de tamanho da fonte + 50%*/
 }
 
-.itens:first-child { /*primeiro ítem da lista*//*poderia usar last-child, nth-child(passando nº do ítem ou valor de n, ex. 2n p/ todos pares)*/
+.itens:first-child {
+    /*primeiro ítem da lista*/
+    /*poderia usar last-child, nth-child(passando nº do ítem ou valor de n, ex. 2n p/ todos pares)*/
     font-weight: bold;
 }
 
@@ -312,6 +320,16 @@ img ~ p { Selecionando todos os parágrafos que vem depois da imagem
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    /*Opacidade 1=100% e 0= 0%* se eu quero exibir 30% = 0.3 */
+    transition: 400ms;
+    /*box-shadow x y blur(espalhamento), intensidade da borda, uma cor  . Vou deslocar 10px no eixo X e 10px no eixo Y*. adiciono mais sombra coloando virgula */
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+    /*Quando o mouse estiver por cima*/
+    opacity: 0.3;
 }
 
 /*Centralizando o vídeo*/
@@ -336,3 +354,25 @@ p:first-line  Deixa primeira linha em itálico
 .titulo-principal:after {
     content: " ]";
 }*/
+
+@media screen and (max-width: 480px) {
+
+    /*Entregar para telas com o máx de 480 px (celular)*/
+    .caixa,
+    .principal,
+    .conteudo-beneficios,
+    .mapa-conteudo,
+    .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
